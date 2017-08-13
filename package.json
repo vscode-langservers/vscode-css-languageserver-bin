@@ -1,0 +1,26 @@
+{
+  "name": "vscode-css-languageserver-bin",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vscode-langservers/vscode-css-languageserver-bin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vscode-langservers/vscode-css-languageserver-bin/issues"
+  },
+  "homepage": "https://github.com/vscode-langservers/vscode-css-languageserver-bin#readme",
+  "devDependencies": {
+    "typescript": "^2.4.2"
+  },
+  "bin": { "css-languageserver" : "cssServerMain.js" },
+  "scripts": {
+    "mergePackages": "node ./mergePackages.js",
+    "addShebang": "sed -i '1i#!/usr/bin/env node' dist/cssServerMain.js",
+    "build": "cd vscode-css-languageserver && npm install && tsc -p . --outDir ../dist && cd .. && npm run addShebang",
+    "publish": "npm run build && npm run mergePackages && npm publish dist",
+    "pack": "npm run build && npm run mergePackages && npm pack dist",
+    "clean": "rm -rf dist"
+  }
+}
