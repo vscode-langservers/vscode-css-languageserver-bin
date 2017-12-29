@@ -44,7 +44,7 @@ The common way to launch it is by using stdio transport:
 css-languageserver --stdio
 ```
 
-However the server can be launched also with one of the following transports:
+The server can also be launched with one of the following transports:
 
 ```bash
 css-languageserver --socket={number}
@@ -53,7 +53,7 @@ css-languageserver --node-ipc
 
 ## Settings
 
-This Language Server accept some settings sent with [workspace/didChangeConfiguration](https://microsoft.github.io/language-server-protocol/specification#workspace_didChangeConfiguration)
+This Language Server accepts some settings sent with [workspace/didChangeConfiguration](https://microsoft.github.io/language-server-protocol/specification#workspace_didChangeConfiguration)
 
 ```typescript
 type Level = "ignore" | "error" | "warning"
