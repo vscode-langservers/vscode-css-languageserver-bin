@@ -7,20 +7,20 @@ Binary version published on npm of [vscode-css-languageserver](https://github.co
 
 # Features
 
-- [x] CSS Support
-- [x] LESS Support
-- [x] SASS Support
-- [x] Completion provider (Need Snippets Support)
-- [x] [Color provider](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.colorProvider.proposed.md)
-- [x] Code Actions (rename mispelled properties)
-- [x] Validation (syntax and lint errros)
-- [X] Hover tooltip provider
-- [x] Definition provider
-- [x] Hover provider
-- [x] References provider
-- [x] Document Symbols & Highlights
-- [x] Rename symbol
-- [x] [Scoped Settings](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.proposed.md)
+-   [x] CSS Support
+-   [x] LESS Support
+-   [x] SASS Support
+-   [x] Completion provider (Need Snippets Support)
+-   [x] [Color provider](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.colorProvider.proposed.md)
+-   [x] Code Actions (rename mispelled properties)
+-   [x] Validation (syntax and lint errros)
+-   [X] Hover tooltip provider
+-   [x] Definition provider
+-   [x] Hover provider
+-   [x] References provider
+-   [x] Document Symbols & Highlights
+-   [x] Rename symbol
+-   [x] [Scoped Settings](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.proposed.md)
 
 ## Getting Started
 
