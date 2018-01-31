@@ -1,7 +1,7 @@
 {
   "name": "vscode-css-languageserver-bin",
   "description": "Binary version published on npm of vscode-css-languageserver extracted from VSCode tree",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vscode-langservers/vscode-css-languageserver-bin.git"
@@ -13,17 +13,16 @@
   },
   "homepage": "https://github.com/vscode-langservers/vscode-css-languageserver-bin#readme",
   "devDependencies": {
+    "chalk": "^2.3.0",
     "typescript": "^2.4.2"
   },
   "bin": {
     "css-languageserver": "cssServerMain.js"
   },
   "scripts": {
-    "mergePackages": "node ./mergePackages.js",
-    "addShebang": "sed -i '1i#!/usr/bin/env node' dist/cssServerMain.js",
-    "build": "cd vscode-css-languageserver && npm install && tsc -p . --outDir ../dist && cd .. && npm run addShebang",
-    "publish": "npm run build && npm run mergePackages && npm publish dist",
-    "pack": "npm run build && npm run mergePackages && npm pack dist",
+    "build": "node build",
+    "publish": "npm run build && npm publish dist",
+    "pack": "npm run build && npm pack dist",
     "clean": "rm -rf dist"
   }
 }
