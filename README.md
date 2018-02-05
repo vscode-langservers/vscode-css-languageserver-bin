@@ -22,6 +22,11 @@ Binary version published on npm of [vscode-css-languageserver](https://github.co
 -   [x] Rename symbol
 -   [x] [Scoped Settings](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.proposed.md)
 
+# Clients
+
+-   [Oni](https://github.com/onivim/oni)
+-   [ide-css](https://github.com/liuderchi/ide-css)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
