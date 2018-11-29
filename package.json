@@ -24,5 +24,10 @@
     "publish": "npm run build && npm publish dist",
     "pack": "npm run build && npm pack dist",
     "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "vscode-css-languageservice": "^3.0.12",
+    "vscode-languageserver": "^5.1.0",
+    "vscode-languageserver-protocol-foldingprovider": "^2.0.1"
   }
 }
