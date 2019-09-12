@@ -115,8 +115,11 @@ To setup the repo locally run:
 git clone --recursive https://github.com/vscode-langservers/vscode-css-languageserver-bin
 cd vscode-css-languageserver-bin
 npm install
-npm run pack
+npm run build
 ```
+This will produce `*.js` files, including the primary executable `cssServerMain.js`, in a folder named `dist`.
+
+Run `node /path/to/dist/cssServerMain.js`, with or without arguments, to start the language server.
 
 ## Versioning
 
