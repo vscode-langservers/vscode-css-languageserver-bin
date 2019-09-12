@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/vscode-css-languageserver-bin.svg)](https://www.npmjs.com/package/vscode-css-languageserver-bin)
 [![Join the chat at https://gitter.im/vscode-langservers/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vscode-langservers/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Binary version published on npm of [vscode-css-languageserver](https://github.com/vscode-langservers/vscode-css-languageserver) extracted from [VSCode tree](https://github.com/Microsoft/vscode/tree/master/extensions/css/server)
+Binary version published on npm of [vscode-css-languageserver](https://github.com/vscode-langservers/vscode-css-languageserver) extracted from [VSCode tree](https://github.com/microsoft/vscode/tree/master/extensions/css-language-features/server)
 
 # Features
 
@@ -11,7 +11,7 @@ Binary version published on npm of [vscode-css-languageserver](https://github.co
 -   [x] LESS Support
 -   [x] SASS Support
 -   [x] Completion provider (Need Snippets Support)
--   [x] [Color provider](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.colorProvider.proposed.md)
+-   [x] Color provider
 -   [x] Code Actions (rename mispelled properties)
 -   [x] Validation (syntax and lint errros)
 -   [X] Hover tooltip provider
@@ -20,13 +20,13 @@ Binary version published on npm of [vscode-css-languageserver](https://github.co
 -   [x] References provider
 -   [x] Document Symbols & Highlights
 -   [x] Rename symbol
--   [x] [Scoped Settings](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/protocol.configuration.proposed.md)
+-   [x] Scoped Settings
 
 # Clients
 
 -   [Oni](https://github.com/onivim/oni)
 -   [ide-css](https://github.com/liuderchi/ide-css)
--   [lsp-css](https://github.com/emacs-lsp/lsp-css)
+-   [lsp-css](https://github.com/emacs-lsp/lsp-mode)
 
 ## Getting Started
 
@@ -122,7 +122,7 @@ npm run pack
 
 We use [SemVer](http://semver.org/) for versioning.
 
-Because we [can't guess](https://github.com/vscode-langservers/vscode-css-languageserver/blob/master/package.json#L4) VSCode extention version, we update `MINOR` when submodule is updated and `PATCH` when only build method is updated
+Because we [can't guess](https://github.com/vscode-langservers/vscode-css-languageserver/blob/master/package.json#L4) VSCode extension version, we update `MINOR` when submodule is updated and `PATCH` when only build method is updated
 
 ## License
 
