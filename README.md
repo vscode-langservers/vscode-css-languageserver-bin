@@ -27,6 +27,7 @@ Binary version published on npm of [vscode-css-languageserver](https://github.co
 -   [Oni](https://github.com/onivim/oni)
 -   [ide-css](https://github.com/liuderchi/ide-css)
 -   [lsp-css](https://github.com/emacs-lsp/lsp-css)
+-   [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp)
 
 ## Getting Started
 
