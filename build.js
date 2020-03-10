@@ -1,4 +1,3 @@
-
 const { readFileSync, writeFileSync, createReadStream, createWriteStream } = require('fs');
 const { spawnSync } = require('child_process');
 const { join } = require('path');
@@ -11,18 +10,15 @@ const throwIfError = res => {
 }
 
 console.log(green(`Installing ${cyan('vscode-css-languageserver')} dependencies`));
-throwIfError(spawnSync('npm', ['install'], {
-	cwd: join(__dirname, 'vscode-css-languageserver'),
+throwIfError(spawnSync('yarn', ['install'], {
+	cwd: join(__dirname, 'vendor/vscode-css-languageserver'),
 	stdio: 'inherit'
 }));
 
 console.log(green(`Compiling ${cyan('vscode-css-languageserver')}`));
-const tsconfig = require('./vscode-css-languageserver/tsconfig.json')
 throwIfError(spawnSync('tsc', [
-	'-p', 'vscode-css-languageserver',
+	'-p', 'vendor/vscode-css-languageserver',
 	'--outDir', 'dist',
-	'--lib', tsconfig.compilerOptions.lib.join(','),
-	'--target', tsconfig.compilerOptions.target,
 	'--listEmittedFiles'
 ], {
 	cwd: __dirname,
@@ -40,7 +36,7 @@ writeFileSync(file, lines.join('\n'), 'utf8')
 
 console.log(green(`Merging package.json files`));
 const currentPackage = require('./package.json');
-const CSSLSPackage = require('./vscode-css-languageserver/package.json');
+const CSSLSPackage = require('./vendor/vscode-css-languageserver/package.json');
 
 writeFileSync(join(__dirname, 'dist', 'package.json'), JSON.stringify(Object.assign(CSSLSPackage, currentPackage, {
 	scripts: {},
